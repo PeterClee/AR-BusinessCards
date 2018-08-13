@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="businesscardsModelStoreContainer" CdmEntityContainer="businesscardsEntities">
+    <EntitySetMapping Name="cardtbls">
+      <EntityTypeMapping TypeName="businesscardsModel.cardtbl">
+        <MappingFragment StoreEntitySet="cardtbl">
+          <ScalarProperty Name="cardid" ColumnName="cardid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="cardcontent" ColumnName="cardcontent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usertbls">
+      <EntityTypeMapping TypeName="businesscardsModel.usertbl">
+        <MappingFragment StoreEntitySet="usertbl">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
