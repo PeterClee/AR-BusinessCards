@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+        <li>@Html.ActionLink("Users", "Index", "usertbls", new { area = "" }, null)</li>
+        <li>@Html.ActionLink("Cards", "Index", "cardtbls", new { area = "" }, null)</li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+    </ul>
+}

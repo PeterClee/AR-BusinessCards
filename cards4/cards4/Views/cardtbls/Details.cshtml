@@ -1,0 +1,35 @@
+﻿@model cards4.Models.cardtbl
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>cardtbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cardcontent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cardcontent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usertbl.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usertbl.username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cardid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
